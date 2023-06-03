@@ -1,0 +1,21 @@
+<h1>Azure AD</h1>
+<h3>ID Token</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% Object.entries(idTokenClaims).forEach(element => { %>
+      <tr>
+        <td><%= element[0] %></td>
+        <td><%= element[1] %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+<br>
+<a href="https://aka.ms/id-tokens" class="btn btn-info" target="_blank">Learn about claims in this ID token</a>
+<a href="/" class="btn btn-primary">Go back</a>

@@ -1,0 +1,20 @@
+<h1>Microsoft Graph API</h1>
+<h3>/me endpoint response</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% Object.entries(profile).forEach(element => { %>
+      <tr>
+        <td><%= element[0] %></td>
+        <td><%= element[1] %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+<br>
+<a href="/" class="btn btn-primary">Go back</a>

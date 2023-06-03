@@ -1,0 +1,10 @@
+<h1><%= title %></h1>
+<% if (isAuthenticated) { %>
+  <p>Hi <%= username %>!</p>
+  <button type="button" class="btn btn-primary" onclick="location.href='/users/id'">View ID token claims</button>
+  <button type="button" class="btn btn-success" onclick="location.href='/auth/acquireToken'">Acquire a token to call the Microsoft Graph API</button>
+  <button type="button" class="btn btn-outline-danger" onclick="location.href='/auth/signout'">Sign out</button>
+<% } else { %>
+  <p>Welcome to <%= title %></p>
+  <button type="button" class="btn btn-outline-primary" onclick="location.href='/auth/signin'">Sign in</button>
+<% } %>
